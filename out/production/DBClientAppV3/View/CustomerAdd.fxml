@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.CustomerAdd">
+   <children>
+      <Button layoutX="14.0" layoutY="360.0" mnemonicParsing="false" onAction="#BackToHomepage" text="Back" />
+      <VBox alignment="CENTER" layoutX="57.0" layoutY="42.0" prefHeight="292.0" prefWidth="95.0" spacing="25.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" text="Customer ID" />
+            <Label text="Name" />
+            <Label text="Address" />
+            <Label text="Postal Code" />
+            <Label text="Country" />
+            <Label text="State/Province" />
+            <Label text="Phone Number" />
+         </children>
+         <padding>
+            <Insets top="10.0" />
+         </padding>
+      </VBox>
+      <TextField fx:id="customerIdTxt" disable="true" layoutX="153.0" layoutY="53.0" />
+      <TextField fx:id="customerNameTxt" layoutX="153.0" layoutY="95.0" />
+      <TextField fx:id="customerAddressTxt" layoutX="153.0" layoutY="138.0" />
+      <TextField fx:id="customerPostalTxt" layoutX="153.0" layoutY="180.0" />
+      <TextField fx:id="customerPhoneTxt" layoutX="153.0" layoutY="308.0" />
+      <ComboBox fx:id="firstLevelComboBox" layoutX="153.0" layoutY="265.0" prefWidth="150.0" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="125.0" layoutY="14.0" text="ADD CUSTOMER" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Button layoutX="345.0" layoutY="360.0" mnemonicParsing="false" onAction="#onSave" text="Save" />
+      <ComboBox fx:id="countryComboBox" layoutX="153.0" layoutY="224.0" onContextMenuRequested="#onCountryChoice" prefWidth="150.0" />
+   </children>
+</AnchorPane>

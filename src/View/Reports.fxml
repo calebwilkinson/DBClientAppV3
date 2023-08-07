@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" minHeight="-Infinity" prefHeight="200.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Reports">
+   <children>
+      <Button layoutX="14.0" layoutY="87.0" mnemonicParsing="false" onAction="#onAppointmentReport" prefHeight="25.0" prefWidth="156.0" text="Appointment Report" />
+      <Button layoutX="185.0" layoutY="87.0" mnemonicParsing="false" onAction="#onContactReport" prefWidth="130.0" text="Contact Report" />
+      <Button layoutX="14.0" layoutY="160.0" mnemonicParsing="false" onAction="#onBack" text="Back" />
+      <Button layoutX="330.0" layoutY="87.0" mnemonicParsing="false" onAction="#onCustomerCountryReport" prefHeight="25.0" prefWidth="156.0" text="Customer Country Report" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="464.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ContactReport">
+   <children>
+      <ComboBox fx:id="contactsComboBox" layoutX="234.0" layoutY="23.0" prefWidth="150.0" promptText="Choose a Contact" />
+      <Button layoutX="266.0" layoutY="62.0" mnemonicParsing="false" onAction="#onGetSchedule" text="Get Schedule" />
+      <TableView fx:id="appointmentsTableView" layoutX="15.0" layoutY="97.0" prefHeight="315.0" prefWidth="569.0">
+        <columns>
+          <TableColumn fx:id="appointmentID" prefWidth="65.33332633972168" text="Appt. ID" />
+          <TableColumn fx:id="appointmentTitle" prefWidth="76.33330535888672" text="Title" />
+            <TableColumn fx:id="appointmentType" prefWidth="86.33335876464844" text="Type" />
+            <TableColumn fx:id="appointmentDescription" prefWidth="92.33329772949219" text="Description" />
+            <TableColumn fx:id="appointmentStart" prefWidth="58.333343505859375" text="Start" />
+            <TableColumn fx:id="appointmentEnd" prefWidth="109.33334350585938" text="End" />
+            <TableColumn fx:id="customerID" prefWidth="82.0" text="Customer ID" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <Button layoutX="545.0" layoutY="424.0" mnemonicParsing="false" text="Print" />
+      <Button layoutX="15.0" layoutY="424.0" mnemonicParsing="false" onAction="#onBack" text="Back" />
+   </children>
+</AnchorPane>

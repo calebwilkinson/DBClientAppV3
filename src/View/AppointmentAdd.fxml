@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="550.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AppointmentAdd">
+   <children>
+      <Button layoutX="14.0" layoutY="510.0" mnemonicParsing="false" onAction="#BackToHomepage" text="Back" />
+      <VBox alignment="CENTER" layoutX="55.0" layoutY="59.0" prefHeight="298.0" prefWidth="95.0" spacing="25.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" text="Appointment ID" />
+            <Label text="Title" />
+            <Label text="Description" />
+            <Label text="Location" />
+            <Label text="Type" />
+            <Label text="Contact" />
+            <Label text="Day" />
+            <Label text="Start" />
+            <Label text="End" />
+            <Label text="Customer ID" />
+            <Label text="User ID" />
+         </children>
+         <padding>
+            <Insets top="10.0" />
+         </padding>
+      </VBox>
+      <TextField fx:id="appointmentIdTxt" disable="true" layoutX="153.0" layoutY="65.0" />
+      <TextField fx:id="titleTxt" layoutX="153.0" layoutY="107.0" />
+      <TextField fx:id="descriptionTxt" layoutX="153.0" layoutY="150.0" />
+      <TextField fx:id="locationTxt" layoutX="153.0" layoutY="193.0" />
+      <TextField fx:id="customerIdTxt" layoutX="153.0" layoutY="448.0" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="125.0" layoutY="14.0" text="ADD APPOINTMENT" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Button layoutX="345.0" layoutY="510.0" mnemonicParsing="false" onAction="#onSave" text="Save" />
+      <DatePicker fx:id="dayTxt" layoutX="153.0" layoutY="320.0" prefHeight="25.0" prefWidth="149.0" />
+      <TextField fx:id="typeTxt" layoutX="153.0" layoutY="235.0" />
+      <ComboBox fx:id="startComboBox" layoutX="153.0" layoutY="364.0" prefWidth="150.0" />
+      <ComboBox fx:id="endComboBox" layoutX="153.0" layoutY="407.0" prefWidth="150.0" />
+      <TextField fx:id="userIdTxt" layoutX="153.0" layoutY="492.0" />
+      <ComboBox fx:id="contactsComboBox" layoutX="153.0" layoutY="278.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>
